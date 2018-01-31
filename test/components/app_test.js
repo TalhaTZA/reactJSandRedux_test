@@ -9,6 +9,11 @@ describe('App' , () => {
   });
 
   it('shows commnet box', () => {
-    expect(component).to.have.class('comment-box').to.exist;
+    expect(component.find('.comment-box')).to.exist;
   });
+
+  it('shows commnet list', () => {
+    expect(component.find('.comment-list')).to.exist;
+  });
+
 });
